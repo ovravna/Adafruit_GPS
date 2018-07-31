@@ -104,6 +104,8 @@ All text above must be included in any redistribution
 class Adafruit_GPS {
  public:
   void begin(uint32_t baud); 
+  void begin(uint32_t baud, uint32_t config, int8_t rxPin, int8_t txPin); 
+
 
 #if defined(__AVR__) && defined(USE_SW_SERIAL)
   #if ARDUINO >= 100 
